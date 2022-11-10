@@ -5,10 +5,11 @@ const JobSeeker = mongoose.Schema({
   firstName: { type: String, required: true, trim: true, minLength: "3" },
   lastName: { type: String, required: true, trim: true, minLength: "3" },
   email: { type: String, required: true, trim: true, minLength: "8", unique: true },
+  password: {type: String, trim: true, require: true},
   profile_pic: { type: String, default: "" },
-  cv: { type: String, default: "", required: true },
-  skills: [{ types: mongoose.Schema.Types.ObjectId, ref: "skill_Schema" }], // **** Store skill ID...
-  certification: [{ types: mongoose.Schema.Types.ObjectId, ref: "certification_Schema" }], // **** Store skill ID...
+  cv: { type: String, default: "", },
+  skills: [{ type: mongoose.Schema.Types.ObjectId, ref: "Skill" }], // **** Store skill ID...
+  certification: [{ type: mongoose.Schema.Types.ObjectId, ref: "Certification" }], // **** Store skill ID...
   social_links: {
     linkedIn: { type: String, default: "" },
     github: { type: String, default: "" },

@@ -1,0 +1,15 @@
+{"level":"error","message":"POST -   - /api/user/register - ::1"}
+{"level":"error","message":"POST - User already exists  - /api/user/register - ::1"}
+{"level":"error","message":"POST - Error: Expected \"options\" to be a plain object.  - /api/user/register - ::1"}
+{"level":"error","message":"POST - User already exists  - /api/user/register - ::1"}
+{"level":"error","message":"POST - User already exists  - /api/user/register - ::1"}
+{"level":"error","message":"POST - Error: Expected \"options\" to be a plain object.  - /api/user/register - ::1"}
+{"level":"error","message":"POST - Invalid token generation  - /api/user/register - ::1"}
+{"level":"error","message":"POST - Invalid token generation  - /api/user/register - ::1"}
+{"level":"error","message":"POST - TypeError: hashPassword is not a function  - /api/user/register - ::1"}
+{"level":"error","message":"POST - User already exists  - /api/user/register - ::1"}
+{"level":"error","message":"POST - No user exists  - /api/user/login - ::1"}
+{"level":"error","message":"POST - Invalid credential  - /api/user/login - ::1"}
+{"level":"error","message":"POST - ReferenceError: savedUser is not defined  - /api/user/login - ::1"}
+{"level":"error","message":"POST - ReferenceError: REGISTER is not defined  - /api/user/login - ::1"}
+{"level":"error","message":"POST - ReferenceError: newUser is not defined  - /api/user/login - ::1"}
