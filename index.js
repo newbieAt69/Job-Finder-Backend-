@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require('express');
 const app = express();
 var fs = require('fs');
@@ -6,6 +7,7 @@ const logger = require('./logger');
 var path = require('path');
 var helmet = require('helmet');
 const cors = require("cors");
+const db = require("./db")
 
 app.use(cors());
 
@@ -41,6 +43,8 @@ app.get("/", (req, res) => {
 // app.use("/sports/consumer", verifyIP, sportConsumer);
 // app.use("/sports/producer", verifyIP, sportProducer);
 // app.use("/wallet/notifi", notifies)
+app.use("/api/user", require("./routes/auth/registration"));
+app.use("/api/user", require("./routes/auth/login"))
 
 
 app.use(function(req, res, next) {
